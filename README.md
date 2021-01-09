@@ -10,3 +10,7 @@
 - **FIFO Queues:** A FIFO queue is a collection based on the first-in-first-out (FIFO) policy. So, it means we use it to do tasks in the same order that they arrive.
 
 - **Pushdown Stacks:** A pushdown stack is a collection that is based on the last-in-first-out (LIFO) policy. So, it means we use it to do tasks taking always the top item of the collection.
+
+- **Fixed-capacity Stacks:** A fixed-capacity stack is a pushdown stack with items limiting.
+
+- **Linked Lists:** A linked list is a recursive data structure that is either empty of a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).

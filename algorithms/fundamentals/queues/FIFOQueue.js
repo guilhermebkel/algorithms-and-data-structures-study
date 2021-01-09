@@ -1,6 +1,11 @@
 class FIFOQueue {
-	#itemsCount = 0
-	#items = []
+	#itemsCount
+	#items
+
+	constructor() {
+		this.#items = []
+		this.#itemsCount = 0
+	}
 
 	enqueue(item) {
 		this.#items.add(item)
@@ -9,6 +14,12 @@ class FIFOQueue {
 	}
 
 	dequeue() {
+		const isEmpty = this.isEmpty()
+
+		if (isEmpty) {
+			throw new Error("This queue is empty!")
+		}
+
 		const mostRecentItem = this.#items.shift()
 
 		this.#itemsCount--
@@ -22,6 +33,12 @@ class FIFOQueue {
 		return size
 	}
 
+	isEmpty() {
+		const isEmpty = this.#itemsCount === 0
+
+		return isEmpty
+	}
+
 	*[Symbol.iterator]() {
 		for(let i = 0; i < this.size(); i++) {
 			const item = this.dequeue()
@@ -30,3 +47,5 @@ class FIFOQueue {
 		}
 	}
 }
+
+export default FIFOQueue

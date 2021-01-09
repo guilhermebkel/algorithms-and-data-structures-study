@@ -1,6 +1,11 @@
 class PushdownStack {
-	#itemsCount = 0
-	#items = []
+	#itemsCount
+	#items
+
+	constructor() {
+		this.#items = []
+		this.#itemsCount = 0
+	}
 
 	push(item) {
 		this.#items.add(item)
@@ -9,6 +14,12 @@ class PushdownStack {
 	}
 
 	pop() {
+		const isEmpty = this.isEmpty()
+
+		if (isEmpty) {
+			throw new Error("This stack is empty!")
+		}
+
 		const leastRecentItem = this.#items.pop()
 
 		this.#itemsCount--
@@ -22,6 +33,12 @@ class PushdownStack {
 		return size
 	}
 
+	isEmpty() {
+		const isEmpty = this.#itemsCount === 0
+
+		return isEmpty
+	}
+
 	*[Symbol.iterator]() {
 		for(let i = 0; i < this.size(); i++) {
 			const item = this.pop()
@@ -29,4 +46,10 @@ class PushdownStack {
 			yield item
 		}
 	}
+
+	set items(items) {
+		this.#items = items
+	}
 }
+
+export default PushdownStack
