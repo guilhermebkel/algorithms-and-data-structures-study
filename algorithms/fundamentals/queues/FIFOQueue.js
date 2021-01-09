@@ -9,11 +9,11 @@ class FIFOQueue {
 	}
 
 	dequeue() {
-		const firstItem = this.#items.shift()
+		const mostRecentItem = this.#items.shift()
 
 		this.#itemsCount--
 
-		return firstItem
+		return mostRecentItem
 	}
 
 	size() {

@@ -9,11 +9,11 @@ class PushdownStack {
 	}
 
 	pop() {
-		const lastItem = this.#items.pop()
+		const leastRecentItem = this.#items.pop()
 
 		this.#itemsCount--
 
-		return lastItem
+		return leastRecentItem
 	}
 
 	size() {
