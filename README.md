@@ -13,4 +13,4 @@
 
 - **Fixed-capacity Stacks:** A fixed-capacity stack is a pushdown stack with items limiting.
 
-- **Linked Lists:** A linked list is a recursive data structure that is either empty of a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
+- **Linked Lists:** A linked list is a recursive data structure that is either empty or a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
