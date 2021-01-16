@@ -1,26 +1,19 @@
-# algorithms-study
-:hammer: A deep study about the most famous algorithms with help of Javascript
+# algorithms-and-data-structures-study
+:hammer: A deep study about algorithms and data structures with help of Javascript
 
-## Fundamentals
-
-Below you can see some basic ideas of algorithms and data structures (per example algorithm analysis).
-
-### Bags, Queues and Stacks
+## Data Structures
 
 These are the most famous data structures used in lot of applications to help solving many issues related to dealing with data.
 
-- [**Bags:**](./algorithms/fundamentals/bags/Bag.js) A bag is a collection where removing items is not supported. Its purpose is to provide clients the ability to collect items and then to iterate through them. The order of iteration is unspecified and should be immaterial to the client.
+- [**Bags:**](./data-structures/bags/Bag.js) A bag is a collection where removing items is not supported. Its purpose is to provide clients the ability to collect items and then to iterate through them. The order of iteration is unspecified and should be immaterial to the client.
 
-- [**FIFO Queue:**](./algorithms/fundamentals/queues/FIFOQueue.js) A FIFO queue is a collection based on the first-in-first-out (FIFO) policy. So, it means we use it to do tasks in the same order that they arrive.
+- [**FIFO Queue:**](./data-structures/queues/FIFOQueue.js) A FIFO queue is a collection based on the first-in-first-out (FIFO) policy. So, it means we use it to do tasks in the same order that they arrive.
 
-- [**Pushdown Stack:**](./algorithms/fundamentals/stacks/PushdownStack.js) A pushdown stack is a collection that is based on the last-in-first-out (LIFO) policy. So, it means we use it to do tasks taking always the top item of the collection.
+- [**Pushdown Stack:**](./data-structures/stacks/PushdownStack.js) A pushdown stack is a collection that is based on the last-in-first-out (LIFO) policy. So, it means we use it to do tasks taking always the top item of the collection.
 
-- [**Fixed-capacity Stack:**](./algorithms/fundamentals/stacks/FixedCapacityStack.js) A fixed-capacity stack is a pushdown stack with items limiting.
+- [**Fixed-capacity Stack:**](./data-structures/stacks/FixedCapacityStack.js) A fixed-capacity stack is a pushdown stack with items limiting.
 
-- [**Linked List:**](./algorithms/fundamentals/lists/LinkedList.js) A linked list is a recursive data structure that is either empty or a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
-
-### WIP: Analysis of Algorithms
-...
+- [**Linked List:**](./data-structures/lists/LinkedList.js) A linked list is a recursive data structure that is either empty or a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
 
 ## Sorting
 
@@ -53,3 +46,31 @@ The quicksort is a popular implementation of sorting since it is easy to do, fas
 Many applications require processing items on demand by taking the one with the largest key per example (without getting all the items sorted at once). In order to do that, we can assign priority to events always choosing to process next the highest-priority event.
 
 - [**Priority Queue:**](./algorithms/sorting/queues/PriorityQueue.js) There are too many ways to implement this ordered based queue, the most basic one is to maintain the queue ordered during the insertions, so that way you just need to remove the first item (with highest priority) in order to process it.
+
+### Heapsort
+
+With help of binary tree heap data structure used to build the heap priority queue, we are able to create a sort method from it as well.
+
+- [**Heapsort:**](./algorithms/sorting/heap/HeapSort.js) The heapsort consists into two actions: first we reorganize the initial array into a heap and after we sortdown, that is when we pull the items out of the heap in decreasing order to build the sorted result.
+
+## TODO
+
+### 1. Finishing the following topics
+
+Data Structures -> Binary Tree
+
+Analysis of Algorithms
+
+Sorting -> Heapsort -> Sortdown
+
+Sorting -> Applications -> Pointer sorting
+
+Sorting -> Applications -> Alternate orderings
+
+Sorting -> Priority Queues -> Heap Priority Queue
+
+### 2. Adding the following information
+
+Adding complexity order for all algorithms
+
+Finishing Heapsort algorithm implementation

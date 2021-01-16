@@ -4,18 +4,18 @@ class SelectionSort extends Sort {
 	sort(array = []) {
 		const arraySize = array.length
 
-		for (let i=0; i<arraySize; i++) {
-			let minimumValueIndex = i
+		for (let leftScanIndex = 0; leftScanIndex < arraySize; leftScanIndex++) {
+			let minimumValueIndex = leftScanIndex
 
-			for (let j=i+1; j<arraySize; j++) {
-				const isFirstValueLowerThanSecondValue = this.isFirstValueLowerThanSecondValue(array[j], array[minimumValueIndex])
+			for (let rightScanIndex = leftScanIndex + 1; rightScanIndex < arraySize; rightScanIndex++) {
+				const isFirstValueLowerThanSecondValue = this.isFirstValueLowerThanSecondValue(array[rightScanIndex], array[minimumValueIndex])
 
 				if (isFirstValueLowerThanSecondValue) {
-					minimumValueIndex = j
+					minimumValueIndex = rightScanIndex
 				}
 			}
 
-			this.exchangeValues(array, i, minimumValueIndex)
+			this.exchangeValues(array, leftScanIndex, minimumValueIndex)
 		}
 	}
 }

@@ -40,13 +40,13 @@ class PriorityQueue extends Sort {
 		/**
 		 * Insert items in a descending ordered format 
 		 */
-		for (let i = this.size() - 1; i !== -1; i--) {
-			const currentItem = this.#items[i]
+		for (let rightScanIndex = this.size() - 1; rightScanIndex !== -1; rightScanIndex--) {
+			const currentItem = this.#items[rightScanIndex]
 
 			const isFirstValueLowerThanSecondValue = this.isFirstValueLowerThanSecondValue(currentItem, item)
 
 			if (isFirstValueLowerThanSecondValue) {
-				insertionIndex = i
+				insertionIndex = rightScanIndex
 			} else {
 				break
 			}

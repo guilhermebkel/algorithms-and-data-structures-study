@@ -83,6 +83,26 @@ class Sort {
 
 		return rightScanIndex
 	}
+
+	sinkBinaryTreeNodes(array = [], nodePosition, nodesCount) {
+		let currentScanIndex = nodePosition
+
+		while (2 * currentScanIndex <= nodesCount) {
+			let topScanIndex = 2 * currentScanIndex
+
+			if (topScanIndex < nodesCount && this.isFirstValueLowerThanSecondValue(topScanIndex, topScanIndex + 1)) {
+				topScanIndex++
+			}
+
+			if (!this.isFirstValueLowerThanSecondValue(currentScanIndex, topScanIndex)) {
+				break
+			}
+
+			this.exchangeValues(array, currentScanIndex, topScanIndex)
+
+			currentScanIndex = topScanIndex
+		}
+	}
 }
 
 module.exports = Sort
