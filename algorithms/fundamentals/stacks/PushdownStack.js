@@ -8,7 +8,7 @@ class PushdownStack {
 	}
 
 	push(item) {
-		this.#items.add(item)
+		this.#items.push(item)
 
 		this.#itemsCount++
 	}
@@ -46,10 +46,6 @@ class PushdownStack {
 			yield item
 		}
 	}
-
-	set items(items) {
-		this.#items = items
-	}
 }
 
-export default PushdownStack
+module.exports = PushdownStack

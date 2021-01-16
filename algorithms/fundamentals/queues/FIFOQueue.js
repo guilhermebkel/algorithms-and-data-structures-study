@@ -8,7 +8,7 @@ class FIFOQueue {
 	}
 
 	enqueue(item) {
-		this.#items.add(item)
+		this.#items.push(item)
 
 		this.#itemsCount++
 	}
@@ -48,4 +48,4 @@ class FIFOQueue {
 	}
 }
 
-export default FIFOQueue
+module.exports = FIFOQueue

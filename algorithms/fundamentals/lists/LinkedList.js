@@ -79,4 +79,4 @@ class LinkedList {
 	}
 }
 
-export default LinkedList
+module.exports = LinkedList

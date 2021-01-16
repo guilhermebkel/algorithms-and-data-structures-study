@@ -21,4 +21,4 @@ class Bag {
 	}
 }
 
-export default Bag
+module.exports = Bag
