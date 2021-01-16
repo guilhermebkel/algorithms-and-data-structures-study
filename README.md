@@ -14,3 +14,10 @@
 - **Fixed-capacity Stacks:** A fixed-capacity stack is a pushdown stack with items limiting.
 
 - **Linked Lists:** A linked list is a recursive data structure that is either empty or a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
+
+### WIP: Analysis of Algorithms
+...
+
+### Sorting
+
+- **Selection Sort:** This algorithm works as follows: First, find the smallest item in the array and exchange it with the first entry, then, find the next smallest item and exchange it with the second entry and continue doing that till the entire array is sorted.
