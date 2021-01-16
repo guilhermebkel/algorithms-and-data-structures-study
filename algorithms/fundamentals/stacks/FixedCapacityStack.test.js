@@ -1,4 +1,4 @@
-const assert = require("assert")
+const assert = require("../../sorting/elementary-sorts/node_modules/assert")
 const FixedCapacityStack = require("./FixedCapacityStack.js")
 
 const fixedCapacityStack = new FixedCapacityStack(2)

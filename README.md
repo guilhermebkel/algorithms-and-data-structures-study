@@ -18,6 +18,17 @@
 ### WIP: Analysis of Algorithms
 ...
 
-### Sorting
+## Sorting
 
-- **Selection Sort:** This algorithm works as follows: First, find the smallest item in the array and exchange it with the first entry, then, find the next smallest item and exchange it with the second entry and continue doing that till the entire array is sorted.
+### Elementary Sorts
+
+- **Selection Sort:** Selection sort works as follows: First, find the smallest item in the array and exchange it with the first entry, then, find the next smallest item and exchange it with the second entry and continue doing that till the entire array is sorted.
+
+- **Insertion Sort:** Insertion sort goes from the left side array to the right, that way the left side is being sorted and the array gets fully sorted when we get to the last array item.
+
+### Mergesort
+
+- **Top-down Mergesort:** Top-down mergesort is a recursive implementation that turn an array into sub-arrays (recursively), then order all the sub-arrays and finally merge them to the final ordered array.
+
+- **Bottom-up Mergesort:** Bottom-up mergesort works with recursive calls as follows: First, start by doing a pass of 1-by-1 merges, then a pass of 2-by-2 merges and keep doing that till the array is fully sorted.
+

@@ -1,4 +1,4 @@
-const Sort = require("./Sort")
+const Sort = require("../Sort")
 
 class SelectionSort extends Sort {
 	sort(array = []) {

@@ -1,4 +1,4 @@
-const assert = require("assert")
+const assert = require("../../sorting/elementary-sorts/node_modules/assert")
 const PushdownStack = require("./PushdownStack.js")
 
 const pushdownStack = new PushdownStack()
