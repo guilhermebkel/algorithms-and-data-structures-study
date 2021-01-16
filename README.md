@@ -11,13 +11,13 @@ These are the most famous data structures used in lot of applications to help so
 
 - [**Bags:**](./algorithms/fundamentals/bags/Bag.js) A bag is a collection where removing items is not supported. Its purpose is to provide clients the ability to collect items and then to iterate through them. The order of iteration is unspecified and should be immaterial to the client.
 
-- [**FIFO Queues:**](./algorithms/fundamentals/queues/FIFOQueue.js) A FIFO queue is a collection based on the first-in-first-out (FIFO) policy. So, it means we use it to do tasks in the same order that they arrive.
+- [**FIFO Queue:**](./algorithms/fundamentals/queues/FIFOQueue.js) A FIFO queue is a collection based on the first-in-first-out (FIFO) policy. So, it means we use it to do tasks in the same order that they arrive.
 
-- [**Pushdown Stacks:**](./algorithms/fundamentals/stacks/PushdownStack.js) A pushdown stack is a collection that is based on the last-in-first-out (LIFO) policy. So, it means we use it to do tasks taking always the top item of the collection.
+- [**Pushdown Stack:**](./algorithms/fundamentals/stacks/PushdownStack.js) A pushdown stack is a collection that is based on the last-in-first-out (LIFO) policy. So, it means we use it to do tasks taking always the top item of the collection.
 
-- [**Fixed-capacity Stacks:**](./algorithms/fundamentals/stacks/FixedCapacityStack.js) A fixed-capacity stack is a pushdown stack with items limiting.
+- [**Fixed-capacity Stack:**](./algorithms/fundamentals/stacks/FixedCapacityStack.js) A fixed-capacity stack is a pushdown stack with items limiting.
 
-- [**Linked Lists:**](./algorithms/fundamentals/lists/LinkedList.js) A linked list is a recursive data structure that is either empty or a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
+- [**Linked List:**](./algorithms/fundamentals/lists/LinkedList.js) A linked list is a recursive data structure that is either empty or a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
 
 ### WIP: Analysis of Algorithms
 ...
@@ -51,3 +51,5 @@ The quicksort is a popular implementation of sorting since it is easy to do, fas
 ### Priority Queues
 
 Many applications require processing items on demand by taking the one with the largest key per example (without getting all the items sorted at once). In order to do that, we can assign priority to events always choosing to process next the highest-priority event.
+
+- [**Priority Queue:**](./algorithms/sorting/queues/PriorityQueue.js) There are too many ways to implement this ordered based queue, the most basic one is to maintain the queue ordered during the insertions, so that way you just need to remove the first item (with highest priority) in order to process it.
