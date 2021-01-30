@@ -77,7 +77,7 @@ These searching algorithms use the data structure called binary tree (it is basi
 
 ### Hash Tables
 
-These ones are simple structures that uses a key-value structure in which the key corresponds to a index on an array. So, it means that the given key must refer a unique index on the array that is storing it (we must avoid key/index collisions). 
+These ones use a key-value structure in which the key corresponds to an index on an array. So, it means that the given key must refer a unique index on the array that is storing it (we must avoid key/index collisions). 
 
 - [**Separate Chaining Hash:**](./algorithms/searching/hash-table/SeparateChainingHash.js) It is a hash table that converts the key into indexes to store the data inside an array of sequential searches.
 
