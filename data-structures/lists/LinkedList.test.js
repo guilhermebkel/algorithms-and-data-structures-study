@@ -1,4 +1,4 @@
-const assert = require("../../sorting/elementary-sorts/node_modules/assert")
+const assert = require("assert")
 const LinkedList = require("./LinkedList.js")
 
 const linkedList = new LinkedList()

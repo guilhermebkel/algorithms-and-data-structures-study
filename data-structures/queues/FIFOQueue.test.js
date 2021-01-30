@@ -1,4 +1,4 @@
-const assert = require("../../sorting/elementary-sorts/node_modules/assert")
+const assert = require("assert")
 const FIFOQueue = require("./FIFOQueue.js")
 
 const fifoQueue = new FIFOQueue()

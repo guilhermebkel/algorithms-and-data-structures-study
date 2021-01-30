@@ -2,9 +2,9 @@ class Node {
 	#item
 	#next
 
-	constructor(item) {
-		this.#item = null
-		this.#next = null
+	constructor(item, next) {
+		this.#item = item
+		this.#next = next
 	}
 
 	get next() {
@@ -13,14 +13,6 @@ class Node {
 
 	get item() {
 		return this.#item
-	}
-
-	set next(node) {
-		this.#next = node
-	}
-
-	set item(item) {
-		this.#item = item
 	}
 }
 
@@ -34,10 +26,7 @@ class LinkedList {
 	}
 
 	push(item) {
-		const node = new Node()
-
-		node.item = item
-		node.next = this.#head
+		const node = new Node(item, this.#head)
 
 		this.#head = node
 

@@ -1,5 +1,32 @@
-const { Node } = require("../../../data-structures/DataStructures")
 const Search = require("../Search")
+
+class Node {
+	#key
+	#value
+	#next
+
+	constructor(key, value, next) {
+		this.#key = key
+		this.#value = value
+		this.#next = next
+	}
+
+	get next() {
+		return this.#next
+	}
+
+	get value() {
+		return this.#value
+	}
+
+	get key() {
+		return this.#key
+	}
+
+	set value(value) {
+		this.#value = value
+	}
+}
 
 class SequentialSearch extends Search {
 	#first
@@ -11,7 +38,7 @@ class SequentialSearch extends Search {
 	}
 
 	get (key) {
-		let item = null
+		let value = null
 
 		for (let node = this.#first; node != null; node = node.next) {
 			const nodeKey = node.key
@@ -19,13 +46,13 @@ class SequentialSearch extends Search {
 			const areKeysEqual = this.compareValues(key, nodeKey) === 0
 
 			if (areKeysEqual) {
-				item = node.item
+				value = node.value
 
 				break
 			}
 		}
 		
-		return item
+		return value
 	}
 
 	put (key, value) {
@@ -35,7 +62,7 @@ class SequentialSearch extends Search {
 			const areKeysEqual = this.compareValues(key, nodeKey) === 0
 
 			if (areKeysEqual) {
-				node.item = value
+				node.value = value
 
 				return
 			}
@@ -43,10 +70,7 @@ class SequentialSearch extends Search {
 
 		const next = this.#first
 		
-		this.#first = new Node()
-		this.#first.item = value
-		this.#first.key = key
-		this.#first.next = next
+		this.#first = new Node(key, value, next)
 	}
 }
 

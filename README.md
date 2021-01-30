@@ -15,6 +15,8 @@ These are the most famous data structures used in lot of applications to help so
 
 - [**Linked List:**](./data-structures/lists/LinkedList.js) A linked list is a recursive data structure that is either empty or a reference to a node having a generic item and a reference to a linked list (a node is any kind of data that refers another node recursively).
 
+- [**Binary Heap:**](./data-structures/binary-tree/BinaryHeap.js) A binary heap is a heap constructed with help of a binary tree structure, which can maintain all the values sorted during its insert and remove actions.
+
 ## Sorting
 
 Below you can see some of the famous methods of sorting values.
@@ -53,6 +55,22 @@ With help of binary tree heap data structure used to build the heap priority que
 
 - [**Heapsort:**](./algorithms/sorting/heap/HeapSort.js) The heapsort consists into two actions: first we reorganize the initial array into a heap and after we sortdown, that is when we pull the items out of the heap in decreasing order to build the sorted result.
 
+## Searching
+
+Below you can see some of the structures focused on searching. Usually these structures have the pattern or associating a value with a key. That key is used later to get the item you have inserted (what means that we must make sure that the key we create is unique).
+
+- [**Sequential Search:**](./algorithms/searching/symbol-table/SequentialSearch.js) It is a kind of Symbol Table, which we use a linked list structure to keep all items ordered and so to sequentially search them.
+
+- [**Binary Search:**](./algorithms/searching/symbol-table/BinarySearch.js) It is a kind of Symbol Table, that during searches, we divide the keys in two parts and so, we determine if we will search on the right part or the left one, instead of searching sequentially all the array keys.
+
+- [**Binary Search Tree:**](./algorithms/searching/symbol-table/BinarySearchTree.js) It is a symbol table that uses the binary tree data structure to handle all searching process. So, each node in the tree has a key that is larger than the keys in all node's left subtree and smaller than the keys in all nodes in that node's right subtree.
+
+- [**Red Black Binary Search Tree:**](./algorithms/searching/balanced-search-tree/RedBlackBinarySearchTree.js) It is a binary search tree (actually the one with 2-3 nodes) with an optimization that helps keeping the path to a value almost the same for all entries. So, we can call it to be a balanced search tree method, since it is able to search values with same distance between the root of the tree to any value you want.
+
+- [**Separate Chaining Hash:**](./algorithms/searching/hash-table/SeparateChainingHash.js) It is a hash table that converts the key into indexes to store the data inside an array of sequential searches.
+
+- [**Linear Probing Hash:**](./algorithms/searching/hash-table/LinearProbingHash.js) It is a hash table which we store keys and values in separated arrays in order to get an easy search match later.
+
 ## TODO
 
 ### 1. Finishing the following topics
@@ -61,16 +79,6 @@ Data Structures -> Binary Tree
 
 Analysis of Algorithms
 
-Sorting -> Heapsort -> Sortdown
-
-Sorting -> Applications -> Pointer sorting
-
-Sorting -> Applications -> Alternate orderings
-
-Sorting -> Priority Queues -> Heap Priority Queue
-
 ### 2. Adding the following information
 
 Adding complexity order for all algorithms
-
-Finishing Heapsort algorithm implementation

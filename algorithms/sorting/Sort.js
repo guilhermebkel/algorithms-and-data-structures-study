@@ -85,22 +85,33 @@ class Sort {
 	}
 
 	sinkBinaryTreeNodes(array = [], nodePosition, nodesCount) {
-		let currentScanIndex = nodePosition
+		let largestIndex = nodePosition
+		let leftIndex = nodePosition * 2 + 1
+		let rightIndex = leftIndex + 1
+	
+		if (leftIndex < nodesCount && this.isFirstValueLowerThanSecondValue(array[largestIndex], array[leftIndex])) {
+			largestIndex = leftIndex
+		}
 
-		while (2 * currentScanIndex <= nodesCount) {
-			let topScanIndex = 2 * currentScanIndex
+		if (rightIndex < nodesCount && this.isFirstValueLowerThanSecondValue(array[largestIndex], array[rightIndex])) {
+			largestIndex = rightIndex
+		}
 
-			if (topScanIndex < nodesCount && this.isFirstValueLowerThanSecondValue(topScanIndex, topScanIndex + 1)) {
-				topScanIndex++
-			}
+		if (largestIndex !== nodePosition) {
+			this.exchangeValues(array, nodePosition, largestIndex)
 
-			if (!this.isFirstValueLowerThanSecondValue(currentScanIndex, topScanIndex)) {
-				break
-			}
+			this.sinkBinaryTreeNodes(array, nodesCount, largestIndex)
+		}
+	}
 
-			this.exchangeValues(array, currentScanIndex, topScanIndex)
+	swimBinaryTreeNodes(array = [], nodesCount) {
+		let currentIndex = nodesCount
 
-			currentScanIndex = topScanIndex
+		const middleIndex = Math.floor(currentIndex / 2)
+
+		while (currentIndex > 1 && this.isFirstValueLowerThanSecondValue(middleIndex, currentIndex)){
+			this.exchangeValues(array, middleIndex, currentIndex)
+			currentIndex = middleIndex
 		}
 	}
 }
