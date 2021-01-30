@@ -69,7 +69,7 @@ Usually these structures have the pattern of associating a value with a key. Tha
 
 ### Binary Search Trees
 
-These searching algorithms use the data structure called binary tree (it is basically a recursive data structure like a linked list that points at two nodes at a time).
+These searching algorithms use the data structure called binary tree (it is basically a recursive data structure like a linked list that points at two nodes at the same time).
 
 - [**Binary Search Tree:**](./algorithms/searching/symbol-table/BinarySearchTree.js) It is a symbol table that uses the binary tree data structure to handle all searching process. So, each node in the tree has a key that is larger than the keys in all node's left subtree and smaller than the keys in all nodes in that node's right subtree.
 
