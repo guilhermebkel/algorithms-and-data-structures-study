@@ -83,8 +83,31 @@ These ones use a key-value structure in which the key corresponds to an index on
 
 - [**Linear Probing Hash:**](./algorithms/searching/hash-table/LinearProbingHash.js) It is a hash table which we store keys and values in separated arrays in order to get an easy search match later.
 
+## String
+
+String is necessary for almost all kind of communication, we deal with it in information processing, genomics, communication systems and programming systems. Being minded about that, we have the following algorithms:
+
+### String Sorting
+
+We have some sorting methods for string that take advantage of special properties of strings to develop sorts for string keys that are more efficient than the general-purpose sorts that we have seen above.
+
+- [**LSD String Sort:**](./algorithms/string/sorting/LSDStringSort.js) It is known as least-significant-digit string sort. It sorts an array of strings from left word letter to right using a key-indexed count array (so it means that it only sort fixed-length strings).
+
+- [**MSD String Sort:**](./algorithms/string/sorting/MSDStringSort.js) It is known as most-significant-digit string sort. We use key-indexed counting to sort the strings according to their first character, then, recursively sort the sub-arrays corresponding to each character. It is similar to LSD string sort, but, it can be done without a fixed-word length.
+
+- [**Three-way String Quicksort:**](./algorithms/string/sorting/ThreeWayStringQuickSort.js) It is an implementation of quicksort for strings, so it deals with partitioning the string array into sub-arrays while sorting it.
+
+### String Searching
+
+We can implement some search methods that can take benefits of using it into a string. Some of them are shown below:
+
+- [**Trie Symbol Table:**](./algorithms/string/searching/TrieSymbolTable.js) It is a basic symbol table that creates a search tree using the characters of the string keys that allow us to use the characters of the search key to guide the search.
+
+
 ## TODO
 
 - [TOPIC] Adding Analysis of Algorithms
 - [REFACTOR] Adding complexity order for all algorithms
 - [TOPIC] Graphs
+- [TOPIC/ALGORITHM] String -> String Sort -> LSD String Sort
+- [TOPIC/ALGORITHM] String -> String Sort -> MSD String Sort
