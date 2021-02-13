@@ -87,3 +87,4 @@ These ones use a key-value structure in which the key corresponds to an index on
 
 - [TOPIC] Adding Analysis of Algorithms
 - [REFACTOR] Adding complexity order for all algorithms
+- [TOPIC] Graphs
