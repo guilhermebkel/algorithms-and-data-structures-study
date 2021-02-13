@@ -9,4 +9,3 @@ separateChainingHash.put("teste", 0)
 
 assert.deepEqual(separateChainingHash.get("Guilherme"), 123)
 assert.deepEqual(separateChainingHash.get("NotExistentKey"), null)
-
