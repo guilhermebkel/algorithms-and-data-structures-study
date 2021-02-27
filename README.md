@@ -87,7 +87,7 @@ These ones use a key-value structure in which the key corresponds to an index on
 
 String is necessary for almost all kind of communication, we deal with it in information processing, genomics, communication systems and programming systems. Being minded about that, we have the following algorithms:
 
-### String Sorting
+### Sorting
 
 We have some sorting methods for string that take advantage of special properties of strings to develop sorts for string keys that are more efficient than the general-purpose sorts that we have seen above.
 
@@ -97,17 +97,49 @@ We have some sorting methods for string that take advantage of special propertie
 
 - [**Three-way String Quicksort:**](./algorithms/string/sorting/ThreeWayStringQuickSort.js) It is an implementation of quicksort for strings, so it deals with partitioning the string array into sub-arrays while sorting it.
 
-### String Searching
+### Searching
 
 We can implement some search methods that can take benefits of using it into a string. Some of them are shown below:
 
 - [**Trie Symbol Table:**](./algorithms/string/searching/TrieSymbolTable.js) It is a basic symbol table that creates a search tree using the characters of the string keys that allow us to use the characters of the search key to guide the search.
 
-
 ## TODO
 
-- [TOPIC] Adding Analysis of Algorithms
-- [REFACTOR] Adding complexity order for all algorithms
-- [TOPIC] Graphs
-- [TOPIC/ALGORITHM] String -> String Sort -> LSD String Sort
-- [TOPIC/ALGORITHM] String -> String Sort -> MSD String Sort
+### Topics
+
+- Analysis of Algorithms
+
+- Graphs
+
+### Refactors
+
+- Adding complexity order for all algorithms
+
+### Algorithms
+
+- **Data Structures:**
+  - Applications -> Dijkstra’s Two-Stack Algorithm for Expression Evaluation
+
+- **Analysis of Algorithms:**
+  - Case Study -> Union-find implementation (ALGORITHM 1.5)
+
+- **Sorting:**
+  - Priority Queues -> Heap priority queue (ALGORITHM 2.6)
+  - Quicksort -> Quicksort with 3-way partitioning
+  - Quicksort -> Quicksort partitioning
+  - Elementary Sorts -> Shellsort (ALGORITHM 2.3)
+
+- **Searching:**
+  - Applications -> Sparse vector with dot product
+  - Applications -> File indexing
+  - Applications -> Index (and inverted index) lookup
+  - Applications -> Dictionary lookup
+
+- **String:**
+  - Sort -> LSD (ALGORITHM 5.1)
+  - Sort -> MSD (ALGORITHM 5.2)
+  - Searching -> TST (ALGORITHM 5.5)
+  - Searching -> Knuth-Morris-Pratt substring search (ALGORITHM 5.6)
+  - Regular Expressions -> Regular expression pattern matching (grep) (ALGORITHM 5.9)
+  - Data Compression -> Huffman compression (ALGORITHM 5.10)
+  - Data Compression -> LZW compression (ALGORITHM 5.11)
